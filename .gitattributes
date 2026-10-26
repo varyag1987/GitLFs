@@ -1,0 +1,2 @@
+folder/folderGitLFs.txt filter=lfs diff=lfs merge=lfs -text
+GitLFs.txt filter=lfs diff=lfs merge=lfs -text
