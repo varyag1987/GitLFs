@@ -39,6 +39,7 @@ pipeline {
         
         stage('deleteDir') {
             steps {
+                echo "Bye"
                 deleteDir()
             }
         }
