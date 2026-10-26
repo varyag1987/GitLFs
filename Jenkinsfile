@@ -2,12 +2,6 @@ pipeline {
     agent {label 'node01'}
     
     stages {
-        stage('deleteDir') {
-            steps {
-                deleteDir()
-            }
-        }
-
         stage('Verify LFS files') {
             steps {
                 script {
@@ -23,6 +17,12 @@ pipeline {
                         }
                     }                    
                 }
+            }
+        }
+
+        stage('deleteDir') {
+            steps {
+                deleteDir()
             }
         }
     }
