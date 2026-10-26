@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'node01'}
     
     stages {
         stage('deleteDir') {
@@ -11,6 +11,7 @@ pipeline {
         stage('Verify LFS files') {
             steps {
                 script {
+                    
                     def expected = [
                         'GitLFs.txt': 'GitLFs',
                         'folder/folderGitLFs.txt': 'folderGitLFs'
