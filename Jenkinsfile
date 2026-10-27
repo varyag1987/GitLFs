@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'node01'}
+    agent {label 'node-static01'}
     
     stages {
         stage('Verify LFS files') {
